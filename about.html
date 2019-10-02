@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="微校, 微校网页" />
+    <meta name="description" content="微校网页" />
+    <title>微校</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" id="favicon" />
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/app.css?v=2019991227">
+    <link rel="stylesheet" href="/lib/swiper/swiper.css">
+    <link rel="stylesheet" href="/styles/app.css?v=2019991227">
+    <link rel="stylesheet" href="/styles/home.css?v=2019991227">
+    <link rel="stylesheet" href="/css/banner.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ea9fb346c253da68585056669489cfcd";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+<div class="header">
+    <img src="/images/sglogo.png" class="logo" id="toHome" />
+    <ul class="nav">
+        <li class="active"><a href="/about">品牌简介</a></li>
+        <li class=""><a href="/">首页</a></li>
+    </ul>
+</div>
+<script>
+    var linkUri = window.location.href;
+    var merchantEnter = document.getElementById('merchantEnter')
+    document.body.style.minHeight = window.innerHeight + 'px';
+    window.addEventListener('resize', function () {
+        document.body.style.minHeight = window.innerHeight + 'px';
+    });
+    if (linkUri.indexOf('test') > -1) {
+        merchantEnter.href = 'https://test2sop.shargoodsmall.com/login'
+    }
+
+</script>
+
+<!--banner start-->
+
+<div class="banner" id="banner">
+    <div class="about-banner banner-img hide" >
+        <div class="msg">
+            <div>
+
+                <span class="slantLine"></span>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container hide" >
+        <div class="swiper-wrapper">
+            <div>
+                <img src="/images/about-1.png" class="img" />
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!--banner end-->
+<!--start-->
+
+
+<div class="caption">
+    <span class="title">关于我们</span>
+    <br>
+    <span class="subTitle">About us</span>
+</div>
+<ul class="advantage-list mt60 clearfix my-about">
+    <img src="/images/about-2.png" class="img" />
+    <li class="second">
+        <div class="item">
+            <div class="content">
+                <h2>
+                    <span class="title">分享优质生活理念</span>
+                </h2>
+                <p class="msg">
+                    微校是专门为高校定制的一个大学生创新创业一体化实践平台，其中包括大学生创业实践、大学生实习实训、大学生服务三大服务体系，微校汇集数百家知名企业和培训机构，从大学生实际需求出发，导入各领域企业孵化项目，为大学生提供更多创新创业环境，不断积累创业实践经验，还可以为大学生提供更多类型的培训，全方位为大学生服务，为国家培养创新型人才贡献力量。                </p>
+            </div>
+        </div>
+    </li>
+</ul>
+<div class="copyRight">
+    <div class="container">
+        <ul>
+
+            <li class="padding-top">校园微校 关于 联系我们 加入我们</li>
+            <!--            <li class="padding-top" style="width: 500px"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010902002069" target="_blank" style="color: #FFF;">浙公网安备 33010902002069号</a> Copyright@2011-2018 sharegoodsmall.com all Rights Reserved</li>-->
+        </ul>
+        <ul>
+            <li style="margin-left: 400px">
+                隐私政策<br/>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="js/pagination/common/jquery.js"></script>
+<script src="js/app.js"></script>
+<script src="js/banner.js"></script>
+
+<script src="lib/swiper/swiper.js"></script>
+<script>
+    getBannerImage(6,'.index-banner')
+</script>
+</body>
+
+</html>

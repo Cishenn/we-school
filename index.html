@@ -1,12 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>测试代码</title>
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <meta name="ts" content="2019991227" />-->
+<!--    <meta name="keywords" content="秀购，秀购平台" />-->
+<!--    <meta name="description" content="秀购，分享生活，分享爱。甄选好货，纵享品质生活。海量商品、超高佣金、完善的培训体系，动动手指手机轻松创业。手机创业就上秀购" />-->
+    <title>微校</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" id="favicon" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="lib/swiper/swiper.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ea9fb346c253da68585056669489cfcd";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+
 </head>
+
 <body>
-    测试代码
+<div class="header">
+    <img src="images/sglogo.png" class="logo" id="toHome" />
+    <ul class="nav">
+<!--        <li class=""><a href="/join">加入我们</a></li>-->
+<!--        <li class=""><a href="/help">帮助中心</a></li>-->
+<!--        <li class=""><a target="_blank" href="https://shop.sharegoodsmall.com/login"-->
+<!--                        id="merchantEnter">商家入口</a></li>-->
+<!--        <li class=""><a href="/concat">招商合作</a></li>-->
+<!--        <li class=""><a href="/product">我有产品</a></li>-->
+<!--        <li class=""><a href="/flow">我有流量</a></li>-->
+<!--        <li class=""><a href="/news">新闻中心</a></li>-->
+        <li class=""><a href="/about">品牌简介</a></li>
+        <li class="active"><a href="/">首页</a></li>
+    </ul>
+</div>
+<script>
+    var linkUri = window.location.href;
+    var merchantEnter = document.getElementById('merchantEnter')
+    document.body.style.minHeight = window.innerHeight + 'px';
+    window.addEventListener('resize', function () {
+        document.body.style.minHeight = window.innerHeight + 'px';
+    });
+    if (linkUri.indexOf('test') > -1) {
+        merchantEnter.href = 'https://test2sop.sharegoodsmall.com/login'
+    }
+
+</script>
+
+<!--banner start-->
+<div class="banner" id="banner">
+    <div class="swiper-container ">
+        <div class="swiper-wrapper">
+            <div class="index-banner banner-img swiper-slide" id="index-banner" style="background-image:url(images/home-1.jpg);">
+                <div class="msg">
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="index-banner banner-img swiper-slide" id="index-banner" style="background-image:url(images/home-2.jpg);">
+                <div class="msg">
+                    <div>
+                        <h2>让天下没有难卖的商品</h2>
+                        <p>THERE IS NO HARD-TO-SELL GOODS IN THIS WORLD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="index-banner banner-img swiper-slide" id="index-banner" style="background-image:url(images/home-3.jpg);">
+                <div class="msg">
+                    <div>
+                        <h2>传承凝聚的力量</h2>
+                        <p>CONDENSING THE POWER OF INHERITANCE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!--banner end-->
+
+<!--平台优势 start-->
+<div class="advantage">
+    <div class="caption">
+        <span class="title">三大服务体系</span>
+        <br>
+        <span class="subTitle">Three service systems</span>
+    </div>
+    <ul class="list">
+        <a href="about">
+            <li>
+                <img src="images/home-4-1.jpg" class="img" />
+                <p class="title">大学生创业实践平台</p>
+                <div class="item">
+                    <!--<h2>消费者</h2>-->
+                    <p class="msg">微校</p>
+                    <p class="msg">微校</p>
+                    <p class="msg">微校</p>
+                    <p class="msg">MORE></p>
+                    <!--<a class="more" href="#">MORE></a>-->
+                </div>
+            </li>
+        </a>
+        <a href="flow">
+            <li>
+                <img src="images/home-4-2.jpg" class="img" />
+                <p class="title">大学生实习实训平台</p>
+                <div class="item">
+                    <!--<h2>品牌商</h2>-->
+                    <p class="msg">微校</p>
+                    <p class="msg">微校</p>
+                    <p class="msg">微校</p>
+                    <p class="msg">MORE></p>
+                    <!--<a class="more" href="#">MORE></a>-->
+                </div>
+            </li>
+        </a>
+        <a href="product">
+            <li>
+                <img src="images/home-4-3.jpg" class="img" />
+                <p class="title">大学生服务平台</p>
+                <div class="item">
+                    <!--<h2>流量主</h2>-->
+                    <p class="msg">微校</p>
+                    <p class="msg">微校</p>
+                    <p class="msg">微校</p>
+                    <p class="msg">MORE></p>
+                    <!--<a class="more" href="#">MORE></a>-->
+                </div>
+            </li>
+        </a>
+    </ul>
+</div>
+<!--平台优势 end-->
+
+<!--公司简介 start-->
+<!--<div>-->
+<!--<div class="caption">-->
+<!--<span class="title">秀购介绍</span>-->
+<!--<span class="slantLine"></span>-->
+<!--<span class="subTitle">ABOUT US</span>-->
+<!--</div>-->
+<!--<div class="companyProfile">-->
+<!--<div class="box">-->
+<!--<img src="images/home-5.jpg" class="title" />-->
+<!--</div>-->
+<!--<div class="message">-->
+<!--<p class="text">秀购 一款零门槛的互联网社交电商平台</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--公司简介 end-->
+<!--版权 start-->
+<!--公司简介 start-->
+<!--<div class="flow">-->
+<!--    <div class="box" id="company-box">-->
+<!--        <div class="content">-->
+<!--            <img src="/images/home-6.png" class="title" />-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;<div class="message">&ndash;&gt;-->
+<!--    &lt;!&ndash;<p class="text">降低流量成本  提高流通效率   让生意更好做</p>&ndash;&gt;-->
+<!--    &lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+<img src="/images/home-6.png" class="home-6" align="center"/>
+<!--公司简介 end-->
+
+<!--公司简介 end-->
+<div class="copyRight">
+    <div class="container">
+        <ul>
+
+            <a href="" style="font-size: 23px">校园微校</a>
+            <a href="" >关于</a>
+            <a href="" >联系我们</a>
+            <a href="" >加入我们</a>
+<!--            <li class="padding-top" style="width: 500px"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010902002069" target="_blank" style="color: #FFF;">浙公网安备 33010902002069号</a> Copyright@2011-2018 sharegoodsmall.com all Rights Reserved</li>-->
+        </ul>
+        <ul>
+            <li style="color:rgba(102,102,102,1); background-position-y:904px; background-position-y: 1451px">
+                隐私政策<br/>
+                <!--食品经营许可证：JY108110144690<br/>-->
+                <!--合作邮箱：bd@meeruu.com<br/>-->
+            </li>
+            <li>
+                <!--京ICP备1066666号<br/>-->
+                <!--京公安网安备1010802015512号<br/>-->
+<!--                营业注册号 91330109MA2CD30004<br/>-->
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="js/pagination/common/jquery.js"></script>
+<script src="js/app.js"></script>
+<script src="js/banner.js"></script>
+
+<script src="lib/swiper/swiper.js"></script>
+<script>
+    getBannerImage(6,'.index-banner')
+</script>
 </body>
+
 </html>
