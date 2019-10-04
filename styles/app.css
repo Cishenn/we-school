@@ -1186,6 +1186,10 @@ img.inline {
     position:relative;
     height:1220px
 }
+.my-about_ {
+    position:relative;
+    height:800px
+}
 .my-about .msg {
     text-align:justify
 }
