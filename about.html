@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="微校, 微校网页" />
     <meta name="description" content="微校网页" />
+
     <title>微校</title>
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" id="favicon" />
     <link rel="stylesheet" href="/styles/normalize.css">
@@ -17,7 +18,7 @@
         var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?ea9fb346c253da68585056669489cfcd";
+            hm.src = "";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
@@ -41,7 +42,7 @@
         document.body.style.minHeight = window.innerHeight + 'px';
     });
     if (linkUri.indexOf('test') > -1) {
-        merchantEnter.href = 'https://test2sop.shargoodsmall.com/login'
+        merchantEnter.href = ''
     }
 
 </script>
@@ -58,18 +59,10 @@
             </div>
         </div>
     </div>
-    <div class="swiper-container hide" >
-        <div class="swiper-wrapper">
-            <div>
-                <img src="/images/about-1.png" class="img" />
-            </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-</div>
-<!--banner end-->
-<!--start-->
+
+    <img src="/images/about-1.png" class="img" />
+
+
 
 
 <div class="caption">
@@ -111,11 +104,9 @@
 <script src="js/pagination/common/jquery.js"></script>
 <script src="js/app.js"></script>
 <script src="js/banner.js"></script>
-
-<script src="lib/swiper/swiper.js"></script>
-<script>
-    getBannerImage(6,'.index-banner')
-</script>
+    <script>
+      getBannerImage(6,'.index-banner')
+    </script>
 </body>
 
 </html>
