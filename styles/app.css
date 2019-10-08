@@ -277,10 +277,10 @@ img.inline {
 }
 .header li a {
     display:block;
-    color:#333
+    color:#FFFFFF
 }
 .header li.active a,.header li:hover a {
-    color:#16B1B5
+    color:#ffffff
 }
 .header li.active,.header li:hover {
     -webkit-animation:tabHover 2s forwards;
