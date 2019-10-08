@@ -238,7 +238,7 @@ img.inline {
        left:0;
        z-index:20;
        background:rgba(22,177,181,0.5);
-       border-top:10px solid #16B1B5
+       border-top:0px solid #16B1B5
    }
 .header .logo {
     width:auto;
@@ -248,7 +248,7 @@ img.inline {
     cursor:pointer
 }
 .header .nav {
-    padding-right:80px;
+    padding-right:360px;
     float:right
 }
 .header li {
