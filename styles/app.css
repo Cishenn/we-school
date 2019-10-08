@@ -1876,9 +1876,9 @@ li {
 }
 .copyRight ul:nth-last-of-type(1) {
     padding:16px 0 0;
-    margin-left: 26.9%;
-    margin-right: 28.1%;
-    border-top:solid 1px #666666
+    margin-left: 120px;
+    border-top:solid 1px #666666;
+    width: 75%
 }
 .copyRight li {
     width:400px;
