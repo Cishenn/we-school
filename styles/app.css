@@ -1205,10 +1205,13 @@ img.inline {
     top:0px
 }
 .my-about .second h2 {
-    text-align:right
+    text-align:left;
+    color: #666666;
 }
 .my-about .second .title {
-    text-align:right
+    text-align:right;
+    text-indent: 2em;
+    color: #666666;
 }
 .my-about .second .content {
     width:539px;
