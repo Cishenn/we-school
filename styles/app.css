@@ -1882,11 +1882,11 @@ li {
     line-height:26px;
     float:left
 }
-.copyRight li a.anchor {
+.copyRight a.anchor {
     font-size: 20px;
     color: #666666;
     letter-spacing: 2.05px;
-    padding-left: 13%
+    padding-left: 7%
 }
 .copyRight li.padding-top {
     padding-top:10px;
