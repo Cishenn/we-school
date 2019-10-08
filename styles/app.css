@@ -1882,7 +1882,7 @@ li {
     line-height:26px;
     float:left
 }
-.copyRight li .anchor {
+.copyRight li a.anchor {
     font-size: 20px;
     color: #666666;
     letter-spacing: 2.05px;
