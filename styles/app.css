@@ -1209,8 +1209,7 @@ img.inline {
     color: #666666;
 }
 .my-about .second .title {
-    text-align:right;
-    text-indent: 2em;
+    text-align:left;
     color: #666666;
 }
 .my-about .second .content {
@@ -1278,8 +1277,9 @@ img.inline {
 .advantage-list .msg {
     line-height:48px;
     font-size:24px;
-    color:#999;
-    padding-top:26px
+    color:#666666;
+    padding-top:26px;
+    text-indent: 2em
 }
 .advantage-list .img {
     width:640px;
