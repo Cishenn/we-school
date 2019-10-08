@@ -1867,7 +1867,8 @@ li {
 }
 .copyRight ul {
     width:100%;
-    padding-bottom:24px;
+    padding-bottom:30px;
+    padding-top: 30px;
     display:table
 }
 .copyRight ul:nth-last-of-type(1) {
@@ -2737,7 +2738,7 @@ li {
     position:fixed
 }
 .hr {
-    height:1px;
+    height:5px;
     width:100%;
     background:#dadada
 }
