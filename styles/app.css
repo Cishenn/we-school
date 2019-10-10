@@ -253,6 +253,13 @@ img.inline {
     padding-right:360px;
     float:right
 }
+.nav {
+    margin: 0 30px;
+    line-height: 56px;
+    color: #fff;
+    font-size: 24px;
+    border-bottom: 4px solid #f1c40f;
+}
 .header li {
     width:114px;
     line-height:80px;
