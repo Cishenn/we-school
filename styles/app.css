@@ -266,7 +266,7 @@ img.inline {
     height:60px
 }
 .header.small .logo {
-    height:74px;
+    height:100%;
     padding:0 0 0 300px;
     -webkit-transition:ease .5s all;
     transition:ease .5s all
@@ -1230,7 +1230,7 @@ img.inline {
     -webkit-animation:liBg .5s forwards;
     animation:liBg .5s forwards
 }
-.advantage-list li:hover,.advantage-list li:hover .msg,.advantage-list li:hover .subTitle, .advantage-list h2:hover .title{
+.advantage-list li:hover,.advantage-list li:hover .msg,.advantage-list li:hover .subTitle, .advantage-list li:hover .title{
     color:#fff
 }
 @-webkit-keyframes liBg {
