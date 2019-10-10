@@ -478,7 +478,7 @@ img.inline {
 .advantage .list li .img {
     width:100%;
     height:300px;
-    display:block;
+    opacity: 0;
 }
 .advantage .list .title {
     color:#fff;
