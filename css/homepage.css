@@ -23,5 +23,10 @@ ul.nav li a .hr{
     width: 0;
 }
 
-.advantage ul.list {
+.header-inner {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

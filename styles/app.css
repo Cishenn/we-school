@@ -243,13 +243,13 @@ img.inline {
 .header .logo {
     width:auto;
     display:inline-block;
-    padding:0 0 0 300px;
+    padding:0;
     cursor:pointer;
     height: 80px;
 }
 .header .nav {
-    padding-right:360px;
-    float:right
+    padding-right: 0;
+    float:right;
 }
 .nav {
     /*margin: 0 30px;*/
@@ -273,7 +273,7 @@ img.inline {
     height:80px
 }
 .header.small .logo {
-    padding:0 0 0 300px;
+    padding: 0;
     -webkit-transition:ease .5s all;
     transition:ease .5s all;
     height: 80px;
