@@ -1189,7 +1189,8 @@ img.inline {
 }
 .my-about li:first-child {
     border-right:1px solid #f0f0f0;
-    border-top:1px solid #f0f0f0
+    border-top:1px solid #f0f0f0;
+    height: 360px
 }
 .my-about li:nth-child(2) {
     border-left:1px solid #f0f0f0;
@@ -1263,7 +1264,7 @@ img.inline {
  }.advantage-list .item {
       width:640px;
       height:600px;
-      float:left
+      float:right
   }
 .advantage-list .content {
     position:absolute;
@@ -1295,9 +1296,9 @@ img.inline {
     text-indent: 2em
 }
 .advantage-list .img {
-    width:640px;
-    height:600px;
-    float:right
+    width:360px;
+    height:270px;
+    float:left
 }
 .help-banner {
     background:url(/images/help.jpg) no-repeat center center;
