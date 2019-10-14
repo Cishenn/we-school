@@ -1236,8 +1236,8 @@ img.inline {
     position:absolute;
     left:50%;
     -webkit-transform:translateX(-50%);
-    -ms-transform:translateX(-50%);
-    transform:translateX(-50%)
+-ms-transform:translateX(-50%);
+transform:translateX(-50%)
 }
 .advantage-list li:hover {
     background:#16B1B5;
@@ -1262,8 +1262,8 @@ img.inline {
          background:#16B1B5
      }
  }.advantage-list .item {
-      width:640px;
-      height:600px;
+      width:740px;
+      height:360px;
       float:right
   }
 .advantage-list .content {
