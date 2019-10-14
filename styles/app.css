@@ -1198,7 +1198,7 @@ img.inline {
 }
 .my-about {
     position:relative;
-    height:600px
+    height:400px
 }
 .my-about_ {
     position:relative;
@@ -1296,8 +1296,8 @@ transform:translateX(-50%)
     text-indent: 2em
 }
 .advantage-list .img {
-    width:360px;
-    height:270px;
+    width:480px;
+    height:360px;
     float:left
 }
 .help-banner {
