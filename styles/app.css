@@ -534,12 +534,12 @@ img.inline {
     -webkit-animation:liBefore .6s forwards;
     animation:liBefore .6s forwards
 } */
-.university {
+.cooperation {
     display: flex;
     flex-direction: column;
     align-items: center
 }
-.university .title {
+.cooperation .title {
     width:127px;
     height:42px;
     font-size:30px;
@@ -548,7 +548,7 @@ img.inline {
     color:rgba(51,51,51,1);
     line-height:42px;
 }
-.university .subTitle {
+.cooperation .subTitle {
     width:211px;
     height:24px;
     font-size:16px;
@@ -558,16 +558,16 @@ img.inline {
     color:rgba(153,153,153,1);
     line-height:22px;
 }
-.university .subTitle.padding-sm {
+.cooperation .subTitle.padding-sm {
     padding-top:20px
 }
-.university .subTitle-text {
+.cooperation .subTitle-text {
     font-size:36px;
     color:#999;
     line-height:40px;
     padding-top:20px
 }
-.university .school-p {
+.cooperation .school-p {
     width:237px;
     height:33px;
     font-size:24px;
@@ -578,11 +578,11 @@ img.inline {
     padding-bottom: 28px
 }
 
-.university .logo .img {
+.cooperation .logo .img {
     padding-right: 72px;
 }
 
-.university .logo .arrow {
+.cooperation .logo .arrow {
     width:35px;
     height:66px;
     padding-bottom:18px
@@ -1354,7 +1354,7 @@ transform:translateX(-50%)
     height:360px;
     float:left
 }
-.university .
+.cooperation .
 
 .help-banner {
     background:url(/images/help.jpg) no-repeat center center;
