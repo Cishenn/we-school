@@ -587,6 +587,29 @@ img.inline {
     height:66px;
     padding-bottom:18px
 }
+.contact_us{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.contact_us .title {
+    width:127px;
+    height:42px;
+    font-size:30px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:42px;
+}
+.contact_us .subTitle{
+    width:146px;
+    height:24px;
+    font-size:16px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    line-height:22px;
+}
 
 @-webkit-keyframes liBefore {
     from {
@@ -1354,7 +1377,7 @@ transform:translateX(-50%)
     height:360px;
     float:left
 }
-.cooperation .
+
 
 .help-banner {
     background:url(/images/help.jpg) no-repeat center center;
