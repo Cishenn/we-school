@@ -540,15 +540,22 @@ img.inline {
     align-items: center;
 }
 .university .title {
-    font-size:36px;
-    line-height:55px
+    width:127px;
+    height:42px;
+    font-size:30px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:42px;
 }
 .university .subTitle {
-    color:#999;
+    width:211px;
+    height:24px;
     font-size:16px;
-    height:44px;
-    vertical-align: text-top;
-    font-family:Montserrat-Regular
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    line-height:22px;
 }
 .university .subTitle.padding-sm {
     padding-top:20px
@@ -558,6 +565,20 @@ img.inline {
     color:#999;
     line-height:40px;
     padding-top:20px
+}
+.university .school-p {
+    width:237px;
+    height:33px;
+    font-size:24px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:33px;
+}
+
+.university .logo {
+    display: flex;
+    flex-direction: column;
 }
 
 @-webkit-keyframes liBefore {
