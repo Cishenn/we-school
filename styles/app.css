@@ -536,7 +536,6 @@ img.inline {
 } */
 .university {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 .university .title {
@@ -552,6 +551,7 @@ img.inline {
     width:211px;
     height:24px;
     font-size:16px;
+    text-align: center;
     font-family:PingFangSC-Medium,PingFang SC;
     font-weight:500;
     color:rgba(153,153,153,1);
