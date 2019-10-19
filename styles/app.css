@@ -536,7 +536,8 @@ img.inline {
 } */
 .university {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: center
 }
 .university .title {
     width:127px;
@@ -577,8 +578,7 @@ img.inline {
 }
 
 .university .logo {
-    display: flex;
-    flex-direction: column;
+
 }
 
 @-webkit-keyframes liBefore {
