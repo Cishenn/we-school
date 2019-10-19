@@ -575,10 +575,13 @@ img.inline {
     font-weight:400;
     color:rgba(51,51,51,1);
     line-height:33px;
+    padding-botton: 28px
 }
 
-.university .logo {
-
+.university .logo .border_r {
+    width:177px;
+    height:125px;
+    border-right: 2px solid black;
 }
 
 @-webkit-keyframes liBefore {
