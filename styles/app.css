@@ -534,6 +534,32 @@ img.inline {
     -webkit-animation:liBefore .6s forwards;
     animation:liBefore .6s forwards
 } */
+.university {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.university .title {
+    font-size:36px;
+    line-height:55px
+}
+.university .subTitle {
+    color:#999;
+    font-size:16px;
+    height:44px;
+    vertical-align: text-top;
+    font-family:Montserrat-Regular
+}
+.university .subTitle.padding-sm {
+    padding-top:20px
+}
+.university .subTitle-text {
+    font-size:36px;
+    color:#999;
+    line-height:40px;
+    padding-top:20px
+}
+
 @-webkit-keyframes liBefore {
     from {
         opacity:0
