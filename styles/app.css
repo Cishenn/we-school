@@ -557,9 +557,11 @@ img.inline {
     font-weight:500;
     color:rgba(153,153,153,1);
     line-height:22px;
+    text-align: center;
 }
 .cooperation .subTitle.padding-sm {
     padding-top:20px
+
 }
 .cooperation .subTitle-text {
     font-size:36px;
