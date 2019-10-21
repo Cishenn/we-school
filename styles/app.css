@@ -778,6 +778,29 @@ img.inline {
     line-height:22px;
     text-indent: 2em;
 }
+
+.first,.seconde {
+    display: flex;
+    justify-content: center;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text .info {
+    margin-top: 20px;
+}
+.adv .content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 51px;
+}
+.adv .text{
+    margin-left: 111px;
+}
+
 @-webkit-keyframes liBefore {
     from {
         opacity:0
