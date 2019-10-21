@@ -427,7 +427,6 @@ img.inline {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 800px;
 }
 .caption .title {
     font-size:36px;
@@ -500,6 +499,7 @@ img.inline {
 .advantage {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .advantage .img {
 
@@ -705,8 +705,57 @@ img.inline {
     border-radius:20px;
     border:1px solid rgba(45,184,188,1);
 }
+.function {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.function .caption .title {
+    width:127px;
+    height:42px;
+    font-size:30px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:42px;
+}
+.function .caption .Subtitle{
+    width:211px;
+    height:24px;
+    font-size:16px;
+    text-align: center;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    line-height:22px;
+    text-align: center;
+}
 
-
+.adv {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.adv .caption .title {
+    width:127px;
+    height:42px;
+    font-size:30px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:42px;
+}
+.adv .caption .Subtitle{
+    width:211px;
+    height:24px;
+    font-size:16px;
+    text-align: center;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    line-height:22px;
+    text-align: center;
+}
 @-webkit-keyframes liBefore {
     from {
         opacity:0
