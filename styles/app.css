@@ -490,6 +490,7 @@ img.inline {
     font-weight:400;
     color:rgba(102,102,102,1);
     line-height:22px;
+    text-indent: 2em;
 }
 .caption .img {
     position: absolute;
@@ -525,6 +526,7 @@ img.inline {
     font-weight:400;
     color:rgba(102,102,102,1);
     line-height:22px;
+    text-indent: 2em;
 }
 .advantage .list .title,.advantage .list li .img,.advantage .list li:before {
     border-radius:10px
@@ -697,6 +699,7 @@ img.inline {
     font-weight:400;
     color:rgba(102,102,102,1);
     line-height:25px;
+    text-indent: 2em;
 }
 .contact_us .cover .online {
     width:120px;
@@ -773,6 +776,7 @@ img.inline {
     font-weight:400;
     color:rgba(102,102,102,1);
     line-height:22px;
+    text-indent: 2em;
 }
 @-webkit-keyframes liBefore {
     from {
