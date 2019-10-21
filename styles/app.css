@@ -630,9 +630,6 @@ img.inline {
 .contact_us .cover .info {
     width:490px;
     height:25px;
-    position: absolute;
-    left: 1200px;
-    top: 73%;
     font-size:18px;
     font-family:PingFangSC-Regular,PingFang SC;
     font-weight:400;
