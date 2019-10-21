@@ -481,6 +481,7 @@ img.inline {
     font-weight:500;
     color:rgba(102,102,102,1);
     line-height:33px;
+    margin-left: 55px;
 }
 .caption .cover .info {
     width:490px;
@@ -489,13 +490,30 @@ img.inline {
     font-family:PingFangSC-Regular,PingFang SC;
     font-weight:400;
     color:rgba(102,102,102,1);
-    line-height:22px;
+    line-height:22px; 
     text-indent: 2em;
+    margin:0 auto;
 }
+.caption .cover{
+   position: absolute;
+   z-index: 1;
+   right: 50%;
+   top: 28.32%;
+   display: flex; 
+   flex-direction: column;
+   justify-content: center;
+   box-sizing: border-box;
+   border: solid 1px #eee;
+
+}
+
 .caption .img {
-    position: absolute;
+    /* position: absolute;
     top: 150px;
     left: 750px;
+    z-index: -1; */
+    margin-left: 31.2%;
+    margin-top: 20px;
 }
 .advantage {
     display: flex;
@@ -598,7 +616,8 @@ img.inline {
 .cooperation {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    margin-top: 80px;
 }
 .cooperation .title {
     width:127px;
@@ -663,6 +682,7 @@ img.inline {
     font-weight:500;
     color:rgba(51,51,51,1);
     line-height:42px;
+    margin-top: 85px;
 }
 .contact_us .subTitle{
     width:146px;
@@ -679,8 +699,12 @@ img.inline {
     height:430px;
     background:rgba(255,255,255,1);
     position: absolute;
-    left: 1200px;
+    left: 49.95%;
     top: 73%;
+    z-index: 1;
+    border: solid 1px #eee;
+    box-sizing: border-box;
+    margin-top: 71px;
 }
 .contact_us .cover .head {
     width:205px;
@@ -690,6 +714,9 @@ img.inline {
     font-weight:500;
     color:rgba(102,102,102,1);
     line-height:33px;
+    /* margin-left: 55px;
+    margin-top: 59px; */
+    margin: 59px 0 40px 55px;
 }
 .contact_us .cover .info {
     width:490px;
@@ -699,7 +726,11 @@ img.inline {
     font-weight:400;
     color:rgba(102,102,102,1);
     line-height:25px;
-    text-indent: 2em;
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+#last-info{
+    margin-bottom: 50px;
 }
 .contact_us .cover .online {
     width:120px;
@@ -707,6 +738,12 @@ img.inline {
     background:rgba(255,255,255,1);
     border-radius:20px;
     border:1px solid rgba(45,184,188,1);
+    margin-left: 55px;
+    font-size: 18px;
+    color: rgba(45,184,188,1);
+}
+.contact_us .img{
+    margin-right: 22.6%;
 }
 .function {
     display: flex;
