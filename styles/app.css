@@ -491,6 +491,11 @@ img.inline {
     color:rgba(102,102,102,1);
     line-height:22px;
 }
+.caption .img {
+    position: absolute;
+    top:850px;
+    left:876px;
+}
 .advantage .list .title,.advantage .list li .img,.advantage .list li:before {
     border-radius:10px
 }
