@@ -617,6 +617,9 @@ img.inline {
     width:600px;
     height:430px;
     background:rgba(255,255,255,1);
+    position: absolute;
+    left: 1200px;
+    top: 73%;
 }
 .contact_us .cover .head {
     width:205px;
