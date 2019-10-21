@@ -427,6 +427,7 @@ img.inline {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 800px;
 }
 .caption .title {
     font-size:36px;
@@ -493,12 +494,42 @@ img.inline {
 }
 .caption .img {
     position: absolute;
-    top:850px;
-    left:876px;
+    top: 150px;
+    left: 750px;
+}
+.advantage {
+    display: flex;
+    flex-direction: column;
+}
+.advantage .img {
+
+}
+.advantage .text {
+    width:400px;
+    height:400px;
+}
+.advantage .text .head {
+    width:248px;
+    height:33px;
+    font-size:24px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+    line-height:33px;
+}
+.advantage .text .info {
+    width:300px;
+    height:200px;
+    font-size:16px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    line-height:22px;
 }
 .advantage .list .title,.advantage .list li .img,.advantage .list li:before {
     border-radius:10px
 }
+
 .advantage .list {
     margin:30px auto 0;
     width: 1200px;
