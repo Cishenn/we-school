@@ -347,7 +347,8 @@ img.inline {
     background-repeat:no-repeat;
     background-position:center center;
     background-size:cover;
-    height:100%
+    height:100%;
+    width: 100%;
 }
 .banner .swiper-pagination-bullet {
     width:60px;
@@ -493,6 +494,7 @@ img.inline {
     line-height:22px; 
     text-indent: 2em;
     margin:0 auto;
+    text-align: left;
 }
 .caption .cover{
    position: absolute;
@@ -503,25 +505,35 @@ img.inline {
    flex-direction: column;
    justify-content: center;
    box-sizing: border-box;
-   border: solid 1px #eee;
+   box-shadow:1px 1px 5px #aaa;
 
-}
-
+} 
 .caption .img {
-    /* position: absolute;
-    top: 150px;
-    left: 750px;
-    z-index: -1; */
     margin-left: 31.2%;
     margin-top: 20px;
+}
+.swiper-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: PingFangSC-Medium, sans-serif;
+    font-size: 22px;
+    color: #999999;
+}
+.previous{
+    margin-right: 3.96%;
+}
+.next{
+    margin-left: 3.96%;
+}
+.mid{
+    font-size: 26px;
+    color: #666666;
 }
 .advantage {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.advantage .img {
-
 }
 .advantage .text {
     width:400px;
@@ -702,7 +714,7 @@ img.inline {
     left: 49.95%;
     top: 73%;
     z-index: 1;
-    border: solid 1px #eee;
+    box-shadow:1px 1px 5px #aaa;
     box-sizing: border-box;
     margin-top: 71px;
 }
@@ -740,7 +752,10 @@ img.inline {
     border:1px solid rgba(45,184,188,1);
     margin-left: 55px;
     font-size: 18px;
+    line-height: 25px;
     color: rgba(45,184,188,1);
+    font-family: PingFangSC-Regular, sans-serif;
+    padding: 7px 23px;
 }
 .contact_us .img{
     margin-right: 22.6%;

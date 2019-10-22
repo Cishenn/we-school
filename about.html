@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="css/homepage.css">
     <script>
         var _hmt = _hmt || [];
-        (function() {
+        (function () {
             var hm = document.createElement("script");
             hm.src = "";
             var s = document.getElementsByTagName("script")[0];
@@ -28,160 +29,222 @@
 </head>
 
 <body>
-<div class="header">
-    <div class="header-inner">
-        <img src="images/sglogo.jpg" class="logo" id="toHome" />
-        <ul class="nav">
-            <li class="active">
-                <a href="about.html">
-                    <span class="caption">品牌简介</span>
-                    <span class="hr"></span>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <span class="caption">首页</span>
-                    <span class="hr"></span>
-                </a>
-            </li>
-        </ul>
+    <div class="header">
+        <div class="header-inner">
+            <img src="images/sglogo.jpg" class="logo" id="toHome" />
+            <ul class="nav">
+                <li class="active">
+                    <a href="about.html">
+                        <span class="caption">品牌简介</span>
+                        <span class="hr"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="caption">首页</span>
+                        <span class="hr"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<script>
-    var linkUri = window.location.href;
-    var merchantEnter = document.getElementById('merchantEnter')
-    document.body.style.minHeight = window.innerHeight + 'px';
-    window.addEventListener('resize', function () {
+    <script>
+        var linkUri = window.location.href;
+        var merchantEnter = document.getElementById('merchantEnter')
         document.body.style.minHeight = window.innerHeight + 'px';
-    });
-    if (linkUri.indexOf('test') > -1) {
-        merchantEnter.href = ''
-    }
+        window.addEventListener('resize', function () {
+            document.body.style.minHeight = window.innerHeight + 'px';
+        });
+        if (linkUri.indexOf('test') > -1) {
+            merchantEnter.href = ''
+        }
 
-</script>
+    </script>
 
-<!--banner start-->
+    <!--banner start-->
 
-<div class="banner" id="banner">
-    <div class="about-banner banner-img hide" >
-        <div class="msg">
-            <div>
+    <div class="banner" id="banner">
+        <div class="about-banner banner-img hide">
+            <div class="msg">
+                <div>
 
-                <span class="slantLine"></span>
-                <p></p>
+                    <span class="slantLine"></span>
+                    <p></p>
+                </div>
             </div>
+        </div>
+
+        <img src="images/about-1.jpg" class="img" />
+    </div>
+    <div class="caption">
+        <span class="title">关于微校</span>
+        <br>
+        <span class="subTitle">About Weixiao</span>
+        <div class="cover">
+            <p class="head">品牌简介</p> <br />
+            <p class="info">
+                微校是专门为高校定制的一个大学生创新创业一体化实践平台，其中包括大学生创业实践、大学生实习实训、大学生服务三大服务体系，汇集了数百家知名企业和培训机构，从大学生实际需求出发，导入各领域企业孵化项目，为大学生提供更多创新创业环境，不断积累创业实践经验，还可以为大学生提供更多类型的培训，全方位为大学生服务，致力于为国家培养创新型人才贡献力量。
+            </p>
+        </div>
+        <img src="images/about-2.jpg" width="710" height="532" class="img" />
+
+    </div>
+    <!--<ul class="advantage-list mt60 clearfix my-about">-->
+    <!--    <li class="second">-->
+    <!--        <img src="images/about-2.jpg" width="359" height="270" class="img" />-->
+    <!--        <div class="item">-->
+    <!--            <div class="content">-->
+
+    <!--                <p class="msg">-->
+    <!--                    <span style="font-size: 28px">微校</span>是专门为高校定制的一个大学生创新创业一体化实践平台，其中包括大学生创业实践、大学生实习实训、大学生服务三大服务体系，微校汇集数百家知名企业和培训机构，从大学生实际需求出发，导入各领域企业孵化项目，为大学生提供更多创新创业环境，不断积累创业实践经验，还可以为大学生提供更多类型的培训，全方位为大学生服务，为国家培养创新型人才贡献力量。                </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </li>-->
+    <!--</ul>-->
+
+    <div class="cooperation">
+        <span class="title">合作机构</span>
+        <br>
+        <span class="subTitle" style="padding-bottom: 50px;">Cooperative institution</span>
+        <p class="school-p">30多所高等合作院校</p>
+        <div class="logo">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img src="images/university-1.png" class="swiper-slide">
+                    <img src="images/university-2.png" class="swiper-slide">
+                    <img src="images/university-3.png" class="swiper-slide">
+                    <img src="images/university-4.png" class="swiper-slide">
+                    <img src="images/university-5.png" class="swiper-slide">
+                    <img src="images/university-6.png" class="swiper-slide">
+                    <img src="images/university-7.png" class="swiper-slide">
+                    <img src="images/university-3.png" class="swiper-slide">
+                    <img src="images/university-4.png" class="swiper-slide">
+                    <img src="images/university-5.png" class="swiper-slide">
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- <div><img src="images/arrow_l.png" class="arrow_l" style="padding-right: 78px;"></div>
+                <div><img src="images/arrow_r.png" class="arrow_r" style="padding-left: 6px"></div> -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <style>
+            .logo .swiper-container {
+                width: 1120px;
+                height: 100%;
+            }
+
+            .logo .swiper-slide {
+                width: 98px;
+                height: 98px;
+            }
+            /* .logo .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            } */
+        </style>
+        <br>
+        <p class="school-p" style="width:186px;padding-top:45px">20多家合作名企</p>
+        <div class="logo">
+            <img src="images/arrow_l.png" class="arrow" style="padding-right: 78px;">
+            <img src="images/company-1.png" class="img">
+            <img src="images/company-2.png" class="img">
+            <img src="images/company-3.png" class="img">
+            <img src="images/company-4.png" class="img">
+            <img src="images/company-5.png" class="img">
+            <img src="images/arrow_r.png" class="arrow" style="padding-left: 6px">
+        </div>
+        <br>
+        <p class="school-p" style="width:232px;padding-top:45px">10多家合作投融机构</p>
+        <div class="logo">
+            <img src="images/arrow_l.png" class="arrow" style="padding-right: 78px;">
+            <img src="images/org-1.png" class="img">
+            <img src="images/org-2.png" class="img">
+            <img src="images/org-3.png" class="img">
+            <img src="images/org-4.png" class="img">
+            <img src="images/org-5.png" class="img">
+            <img src="images/arrow_r.png" class="arrow" style="padding-left: 6px">
+        </div>
+        <br>
+    </div>
+    <div class="contact_us">
+        <span class="title">联系我们</span>
+        <br>
+        <span class="subTitle" style="padding-bottom: 50px;">Contact us</span>
+
+        <img src="images/map.png" style="width:710px;height:568px;" class="img">
+        <div class="cover">
+            <p class="head">杭州微校有限公司</p>
+            <p class="info">地址：杭州市经济开发区6号大街452号2号楼C1811室</p>
+            <p class="info">邮编：310000</p>
+            <p class="info">电话:0571-8690-8500</p>
+            <p class="info" id="last-info">邮箱:BD@isuperu.com</p>
+
+            <a href="" class="online">在线留言</a>
         </div>
     </div>
 
-    <img src="images/about-1.jpg" class="img" />
-</div>
-<div class="caption">
-    <span class="title">关于微校</span>
-    <br>
-    <span class="subTitle">About Weixiao</span>
-    <div class="cover">
-        <p class="head">品牌简介</p> <br/>
-        <p class="info">微校是专门为高校定制的一个大学生创新创业一体化实践平台，其中包括大学生创业实践、大学生实习实训、大学生服务三大服务体系，汇集了数百家知名企业和培训机构，从大学生实际需求出发，导入各领域企业孵化项目，为大学生提供更多创新创业环境，不断积累创业实践经验，还可以为大学生提供更多类型的培训，全方位为大学生服务，致力于为国家培养创新型人才贡献力量</p>
+
+    <div class="copyRight">
+        <div class="container">
+            <ul>
+                <a class="anchor" href="" style="font-size: 26px;padding-left: 23%">校园微校</a>
+                <a class="anchor" href="">关于</a>
+                <a class="anchor" href="">联系我们</a>
+                <a class="anchor" href="">加入我们</a>
+            </ul>
+            <br>
+            <ul>
+                <div style=" text-align: center;margin-top: 10px;">
+                    <a href="" style="color:rgba(102,102,102,1);">
+                        隐私政策
+                    </a>
+                </div>
+            </ul>
+        </div>
     </div>
-    <img src="images/about-2.jpg" width="710" height="532" class="img" />
-
-</div>
-<!--<ul class="advantage-list mt60 clearfix my-about">-->
-<!--    <li class="second">-->
-<!--        <img src="images/about-2.jpg" width="359" height="270" class="img" />-->
-<!--        <div class="item">-->
-<!--            <div class="content">-->
-
-<!--                <p class="msg">-->
-<!--                    <span style="font-size: 28px">微校</span>是专门为高校定制的一个大学生创新创业一体化实践平台，其中包括大学生创业实践、大学生实习实训、大学生服务三大服务体系，微校汇集数百家知名企业和培训机构，从大学生实际需求出发，导入各领域企业孵化项目，为大学生提供更多创新创业环境，不断积累创业实践经验，还可以为大学生提供更多类型的培训，全方位为大学生服务，为国家培养创新型人才贡献力量。                </p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </li>-->
-<!--</ul>-->
-
-<div class="cooperation">
-    <span class="title">合作机构</span>
-    <br>
-    <span class="subTitle" style="padding-bottom: 50px;">Cooperative institution</span>
-    <p class="school-p">30多所高等合作院校</p>
-    <div class="logo">
-        <img src="images/arrow_l.png" class="arrow" style="padding-right: 78px;">
-        <img src="images/university-1.png" class="img">
-        <img src="images/university-2.png" class="img">
-        <img src="images/university-3.png" class="img">
-        <img src="images/university-4.png" class="img">
-        <img src="images/university-5.png" class="img">
-        <img src="images/university-6.png" class="img">
-        <img src="images/university-7.png" class="img">
-        <img src="images/arrow_r.png" class="arrow" style="padding-left: 6px">
-    </div>
-    <br>
-    <p class="school-p" style="width:186px;padding-top:45px">20多家合作名企</p>
-    <div class="logo">
-        <img src="images/arrow_l.png" class="arrow" style="padding-right: 78px;">
-        <img src="images/company-1.png" class="img">
-        <img src="images/company-2.png" class="img">
-        <img src="images/company-3.png" class="img">
-        <img src="images/company-4.png" class="img">
-        <img src="images/company-5.png" class="img">
-        <img src="images/arrow_r.png" class="arrow" style="padding-left: 6px">
-    </div>
-    <br>
-    <p class="school-p" style="width:232px;padding-top:45px">10多家合作投融机构</p>
-    <div class="logo">
-        <img src="images/arrow_l.png" class="arrow" style="padding-right: 78px;">
-        <img src="images/org-1.png" class="img">
-        <img src="images/org-2.png" class="img">
-        <img src="images/org-3.png" class="img">
-        <img src="images/org-4.png" class="img">
-        <img src="images/org-5.png" class="img">
-        <img src="images/arrow_r.png" class="arrow" style="padding-left: 6px">
-    </div>
-    <br>
-</div>
-<div class="contact_us">
-    <span class="title">联系我们</span>
-    <br>
-    <span class="subTitle" style="padding-bottom: 50px;">Contact us</span>
-
-    <img src="images/map.png" style="width:710px;height:568px;" class="img">
-    <div class="cover">
-        <p class="head">杭州微校有限公司</p>
-        <p class="info">地址：杭州市经济开发区6号大街452号2号楼C1811室</p>
-        <p class="info">邮编：310000</p>
-        <p class="info">电话:0571-8690-8500</p>
-        <p class="info" id="last-info">邮箱:BD@isuperu.com</p>
-
-        <a href="" class="online">在线留言</a>
-    </div>
-</div>
 
 
-<div class="copyRight">
-    <div class="container">
-        <ul>
-            <a class="anchor" href="" style="font-size: 26px;padding-left: 23%">校园微校</a>
-            <a class="anchor" href="" >关于</a>
-            <a class="anchor" href="" >联系我们</a>
-            <a class="anchor" href="" >加入我们</a>
-        </ul>
-        <br>
-        <ul>
-            <div style=" text-align: center;margin-top: 10px;">
-                <a href="" style="color:rgba(102,102,102,1);">
-                    隐私政策
-                </a>
-            </div>
-        </ul>
-    </div>
-</div>
-
-
-<script src="js/pagination/common/jquery.js"></script>
-<script src="js/app.js"></script>
-<script src="js/banner.js"></script>
+    <script src="js/pagination/common/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="lib/swiper/swiper.js"></script>
     <script>
-      getBannerImage(6,'.index-banner')
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 7,
+            spaceBetween: 72,
+            // slidesOffsetBefore: 78,
+            // slidesOffsetAfter: 81,
+            slidesPerGroup: 7,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <script>
+        getBannerImage(6, '.index-banner')
     </script>
 </body>
 
