@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/home.css?v=2019991227">
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/my-swiper.css">
     <script>
         var _hmt = _hmt || [];
         (function () {
@@ -109,75 +110,62 @@
         <p class="school-p">30多所高等合作院校</p>
         <div class="logo">
             <div class="swiper-container">
+                <img src="images/arrow_l.png" class="arrow_l" onclick="schoolPrev()" style="padding-right: 78px;">
                 <div class="swiper-wrapper">
-                    <img src="images/university-1.png" class="swiper-slide">
-                    <img src="images/university-2.png" class="swiper-slide">
-                    <img src="images/university-3.png" class="swiper-slide">
-                    <img src="images/university-4.png" class="swiper-slide">
-                    <img src="images/university-5.png" class="swiper-slide">
-                    <img src="images/university-6.png" class="swiper-slide">
-                    <img src="images/university-7.png" class="swiper-slide">
-                    <img src="images/university-3.png" class="swiper-slide">
-                    <img src="images/university-4.png" class="swiper-slide">
-                    <img src="images/university-5.png" class="swiper-slide">
+                    <img src="images/university-1.png" class="swiper-slide"><!--
+                    --><img src="images/university-2.png" class="swiper-slide"><!--
+                    --><img src="images/university-3.png" class="swiper-slide"><!--
+                    --><img src="images/university-4.png" class="swiper-slide"><!--
+                    --><img src="images/university-5.png" class="swiper-slide"><!--
+                    --><img src="images/university-6.png" class="swiper-slide"><!--
+                    --><img src="images/university-7.png" class="swiper-slide"><!--
+                    --><img src="images/university-3.png" class="swiper-slide"><!--
+                    --><img src="images/university-4.png" class="swiper-slide"><!--
+                    --><img src="images/university-5.png" class="swiper-slide"><!--
+                    --><img src="images/university-4.png" class="swiper-slide"><!--
+                    --><img src="images/university-5.png" class="swiper-slide"><!--
+                    --><img src="images/university-6.png" class="swiper-slide"><!--
+                    --><img src="images/university-7.png" class="swiper-slide"><!--
+                    --><img src="images/university-3.png" class="swiper-slide"><!--
+                    --><img src="images/university-4.png" class="swiper-slide"><!--
+                    --><img src="images/university-5.png" class="swiper-slide">
                 </div>
-                <div class="swiper-pagination"></div>
-                <!-- <div><img src="images/arrow_l.png" class="arrow_l" style="padding-right: 78px;"></div>
-                <div><img src="images/arrow_r.png" class="arrow_r" style="padding-left: 6px"></div> -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <img src="images/arrow_r.png" class="arrow_r" onclick="schoolNext()" style="padding-left: 78px;">
             </div>
         </div>
-        <style>
-            .logo .swiper-container {
-                width: 1120px;
-                height: 100%;
-            }
-
-            .logo .swiper-slide {
-                width: 98px;
-                height: 98px;
-            }
-            /* .logo .swiper-slide {
-                text-align: center;
-                font-size: 18px;
-                background: #fff;
-
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                -webkit-align-items: center;
-                align-items: center;
-            } */
-        </style>
         <br>
         <p class="school-p" style="width:186px;padding-top:45px">20多家合作名企</p>
-        <div class="logo">
-            <img src="images/arrow_l.png" class="arrow" style="padding-right: 78px;">
-            <img src="images/company-1.png" class="img">
-            <img src="images/company-2.png" class="img">
-            <img src="images/company-3.png" class="img">
-            <img src="images/company-4.png" class="img">
-            <img src="images/company-5.png" class="img">
-            <img src="images/arrow_r.png" class="arrow" style="padding-left: 6px">
+        <div class="company-wrap">
+            <img src="images/arrow_l.png" class="arrow" onclick="companyPrev()" style="padding-right: 77px;">
+            <div class="logo">
+                <img src="images/company-1.png" class="img">
+                <img src="images/company-2.png" class="img">
+                <img src="images/company-3.png" class="img">
+                <img src="images/company-4.png" class="img">
+                <img src="images/company-5.png" class="img">
+                <img src="images/company-3.png" class="img">
+                <img src="images/company-4.png" class="img">
+                <img src="images/company-5.png" class="img">
+            </div>
+            <img src="images/arrow_r.png" class="arrow" onclick="companyNext()">
         </div>
         <br>
         <p class="school-p" style="width:232px;padding-top:45px">10多家合作投融机构</p>
-        <div class="logo">
-            <img src="images/arrow_l.png" class="arrow" style="padding-right: 78px;">
-            <img src="images/org-1.png" class="img">
-            <img src="images/org-2.png" class="img">
-            <img src="images/org-3.png" class="img">
-            <img src="images/org-4.png" class="img">
-            <img src="images/org-5.png" class="img">
-            <img src="images/arrow_r.png" class="arrow" style="padding-left: 6px">
+        <div class="org-wrap">
+            <img src="images/arrow_l.png" class="arrow" onclick="orgPrev()" style="padding-right: 77px;">
+            <div class="logo">
+                <img src="images/org-1.png" class="img"><!--
+                --><img src="images/org-2.png" class="img"><!--
+                --><img src="images/org-3.png" class="img"><!--
+                --><img src="images/org-4.png" class="img"><!--
+                --><img src="images/org-5.png" class="img"><!--
+                --><img src="images/org-2.png" class="img"><!--
+                --><img src="images/org-3.png" class="img"><!--
+                --><img src="images/org-4.png" class="img"><!--
+                --><img src="images/org-5.png" class="img">
+            </div>
+            <img src="images/arrow_r.png" class="arrow" onclick="orgNext()">
         </div>
         <br>
     </div>
@@ -223,25 +211,7 @@
     <script src="js/app.js"></script>
     <script src="js/banner.js"></script>
     <script src="lib/swiper/swiper.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 7,
-            spaceBetween: 72,
-            // slidesOffsetBefore: 78,
-            // slidesOffsetAfter: 81,
-            slidesPerGroup: 7,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <script src="js/my-swiper.js"></script>
 
     <script>
         getBannerImage(6, '.index-banner')

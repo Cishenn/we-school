@@ -1,0 +1,36 @@
+.logo .swiper-wrapper {
+    position: relative;
+    width: 1120px;
+    height: 98px;
+    overflow: hidden;
+}
+.logo .swiper-slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 98px;
+    height: 98px;
+}
+.logo .swiper-container,.org-wrap,.company-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.company-wrap .logo,.org-wrap .logo {
+    position: relative;
+    width: 1127px;
+    height: 88px;
+    overflow: hidden;
+    margin-right: 76px;
+}
+.company-wrap .logo .img,.org-wrap .logo .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 138px;
+    height: 88px;
+}
+
+
+
