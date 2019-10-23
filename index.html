@@ -8,7 +8,7 @@
     <!--    <meta name="keywords" content="秀购，秀购平台" />-->
     <!--    <meta name="description" content="秀购，分享生活，分享爱。甄选好货，纵享品质生活。海量商品、超高佣金、完善的培训体系，动动手指手机轻松创业。手机创业就上秀购" />-->
     <title>微校</title>
-
+    <script src="https://vuejs.org/js/vue.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg" id="favicon" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="lib/swiper/swiper.css">
@@ -178,7 +178,7 @@
         <div class="caption">
             <span class="title">平台功能</span>
             <span class="subTitle">Platform function</span>
-            <div class="swiper-wrap">
+            <!-- <div class="swiper-wrap">
                 <img src="images/arrow_l.png" class='previous' onclick="prev()">
                 <div class='img1-wrap'>
                     <img src="images/func-1.png">
@@ -193,6 +193,62 @@
                     <p>创业实践</p>
                 </div>
                 <img src="images/arrow_r.png" class='next' onclick="next()">
+            </div> -->
+            <div class="swiper-wrap">
+                <img src="images/arrow_l.png" class='previous' onclick="prev()">
+                <div class="img-wrap">
+                    <div class='imgs'>
+                        <img src="images/func-1.png">
+                        <p>实习实训</p>
+                        <!-- <p class="info1">整合各大知名培训实训机构，包含大学各专业的晋升通道及专业资格证书考试培训，拓展技能技术培训等，为大学生提供一个专业提高个人综合素质的平台。</p> -->
+                    </div>
+                    <div class='imgs'>
+                        <img src="images/func-2.png">
+                        <p>项目资源库</p>
+                        <!-- <p class="info2">项目资源库中的企业项目都是经过微校严格审核认证，把控每个环节，为大学生免去后顾之忧，切实可行，利用平台积累创业实践经验。大学生可通过平台自主选择自身感兴趣的行业，详细了解项目实践经验。</p> -->
+                    </div>
+                    <div class='imgs'>
+                        <img src="images/func-3.png">
+                        <p>创业实践</p>
+                        <!-- <p class=info3>真实创业场景，真实创业项目实操，排除一切虚拟假设。对于高校大学生而言，并不是一场演习，而是一场没有硝烟的战争。同时有专人辅导，实践项目完整孵化过程，使大学生创业路平坦而宽阔。</p> -->
+                    </div>
+                </div>
+                <img src="images/arrow_r.png" class='next' onclick="next()">
+            </div>
+            <style>
+                .swiper-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-family: PingFangSC-Medium, sans-serif;
+                    font-size: 22px;
+                    color: #999999;
+                }
+                .img-wrap{
+                    position: relative;
+                    height: 431px;
+                    width: 1160px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content:center;
+                }
+                .imgs{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .func-info{
+                    width: 300px;
+                }
+
+            </style>
+            <div class="func-info">
+                <p class="info">整合各大知名培训实训机构，包含大学各专业的晋升通道及专业资格证书考试培训，拓展技能技术培训等，为大学生提供一个专业提高个人综合素质的平台。</p>
+                <p class="info">项目资源库中的企业项目都是经过微校严格审核认证，把控每个环节，为大学生免去后顾之忧，切实可行，利用平台积累创业实践经验。大学生可通过平台自主选择自身感兴趣的行业，详细了解项目实践经验。</p>
+                <p class=info>真实创业场景，真实创业项目实操，排除一切虚拟假设。对于高校大学生而言，并不是一场演习，而是一场没有硝烟的战争。同时有专人辅导，实践项目完整孵化过程，使大学生创业路平坦而宽阔。</p>
             </div>
 
 
@@ -248,8 +304,8 @@
         <script src="js/pagination/common/jquery.js"></script>
         <script src="js/app.js"></script>
         <script src="js/banner.js"></script>
-
         <script src="lib/swiper/swiper.js"></script>
+        <script src="js/my-swiper.js"></script>
         <script>
             getBannerImage(6, '.index-banner')
             var mySwiper = new Swiper('.swiper-container', {

@@ -512,14 +512,6 @@ img.inline {
     margin-left: 31.2%;
     margin-top: 20px;
 }
-.swiper-wrap{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-family: PingFangSC-Medium, sans-serif;
-    font-size: 22px;
-    color: #999999;
-}
 .previous{
     margin-right: 3.96%;
 }
