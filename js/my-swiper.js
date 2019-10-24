@@ -100,36 +100,39 @@ function renderPlatformFunctions() {
     platformFunctions.forEach(platformFunction => {
         if (platformFunction.offset === -1) {
             // TODO 
-            platformFunction.node.style.left = -500+'px';
+            platformFunction.node.style.left = -500 + 'px';
             platformFunction.node.style.top = 47 + 'px';
+            platformFunction.node.style.animate = "(box3, 200)";
         }
         else if (platformFunction.offset === 0) {
             // TODO
             platformFunction.node.style.left = 0;
             platformFunction.node.style.top = 37 + 'px';
-            var img=platformFunction.node.querySelector('.imgs .image');
-            img.style.width=400+'px';
-            img.style.height=300+'px';
+            var img = platformFunction.node.querySelector('.imgs .image');
+            img.style.width = 400 + 'px';
+            img.style.height = 300 + 'px';
             platformFunction.node.style.zIndex = -1;
-            var title=platformFunction.node.querySelector('.imgs .title');
-            title.style.fontSize=22+'px';
-            title.style.color='#999999';
-            var info=platformFunction.node.querySelector('.imgs .info');
-            info.style.display="none";
+            var title = platformFunction.node.querySelector('.imgs .title');
+            title.style.fontSize = 22 + 'px';
+            title.style.color = '#999999';
+            var info = platformFunction.node.querySelector('.imgs .info');
+            info.style.display = "none";
+            platformFunction.node.style.transition = "all 1";
         }
         else if (platformFunction.offset === 1) {
             // TODO
-            platformFunction.node.style.left = 330 + 'px';
+            platformFunction.node.style.left = 320 + 'px';
             platformFunction.node.style.top = 0;
             platformFunction.node.style.zIndex = 100;
-            var img=platformFunction.node.querySelector('.imgs .image');
-            img.style.width=500+'px';
-            img.style.height=375+'px';
-            var title=platformFunction.node.querySelector('.imgs .title');
-            title.style.fontSize=26+'px';
-            title.style.color='#666666';
-            var info=platformFunction.node.querySelector('.imgs .info');
-            info.style.display="block";
+            var img = platformFunction.node.querySelector('.imgs .image');
+            img.style.width = 500 + 'px';
+            img.style.height = 375 + 'px';
+            img.style.boxShow="1px 1px 5px #aaa";
+            var title = platformFunction.node.querySelector('.imgs .title');
+            title.style.fontSize = 26 + 'px';
+            title.style.color = '#666666';
+            var info = platformFunction.node.querySelector('.imgs .info');
+            info.style.display = "block";
         }
         else if (platformFunction.offset === 2) {
             platformFunction.node.style.left = 810 + 'px';
@@ -141,12 +144,13 @@ function renderPlatformFunctions() {
             var title = platformFunction.node.querySelector('.imgs .title');
             title.style.fontSize = 22 + 'px';
             title.style.color = "#999999";
-            var info=platformFunction.node.querySelector('.imgs .info');
-            info.style.display="none";
+            var info = platformFunction.node.querySelector('.imgs .info');
+            info.style.display = "none";
+            platformFunction.node.style.transition = "with 2s";
         }
         else {
             // TODO
-            platformFunction.node.style.left = 1230+'px';
+            platformFunction.node.style.left = 1230 + 'px';
             platformFunction.node.style.top = 47 + 'px';
         }
     })
@@ -160,18 +164,34 @@ function prev() {
 
     platformFunctions.forEach(platformFunction => {
         platformFunction.offset--;
+        if(platformFunction.offset===0){
+            platformFunction.node.style.animation = "midtoleft 0.5s ease .1s";
+        }
+        if(platformFunction.offset===1){
+            platformFunction.node.style.animation = "righttomid 0.4s ease .1s";
+        }
+        if(platformFunction.offset===2){
+            platformFunction.node.style.animation = "rright 0.5s ease .1s";
+        }
     });
 
     renderPlatformFunctions();
 }
-//PlatformFunction
 function next() {
     if (platformFunctions[0].offset === 1) {
         return;
     }
-
     platformFunctions.forEach(platformFunction => {
         platformFunction.offset++;
+        if(platformFunction.offset===0){
+            platformFunction.node.style.animation="lleft 0.5s ease .1s";
+        }
+        if(platformFunction.offset===1){
+            platformFunction.node.style.animation = "lefttomid 0.5s ease .1s";
+        }
+        if(platformFunction.offset===2){
+            platformFunction.node.style.animation = "midtoright 0.5s ease .1s";
+        }
     });
 
     renderPlatformFunctions();
