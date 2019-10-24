@@ -32,5 +32,49 @@
     height: 88px;
 }
 
+.swiper-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-wrap {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 1210px;
+    height: 600px;
+    overflow: hidden;
+}
+.img-wrap .imgs-wrapper{
+    position: absolute;
+    flex: 0;
+    top: 0;
+}
+
+.img-wrap .imgs .title {
+    font-family: PingFangSC-Medium, sans-serif;
+    font-size: 22px;
+    color: #999999;
+    width: 100%;
+    margin-top: 19px;
+}
+
+.img-wrap .imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrap .imgs .info {
+    width: 300px;
+    text-align: left;
+    color: #666666;
+    text-indent:2em ;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 
 

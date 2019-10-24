@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/app.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/my-swiper.css">
     <script>
         var _hmt = _hmt || [];
         (function () {
@@ -105,7 +106,7 @@
             <div class="text">
                 <p class="head">大学生实习实训平台</p>
                 <p class="info">
-                    在互联网背景下，大学生的实习实训变换方式也加快了许多，建立更为适合大学生发展的实习实训平台尤为重要，微校针对大学生实习实训搭建一个专业的、个性化、专属定制实训平台，延展校外知识技能培训，提高大学生个人综合素质，提升大学生创业就业能力
+                    在互联网背景下，大学生的实习实训变换方式也加快了许多，建立更为适合大学生发展的实习实训平台尤为重要，微校针对大学生实习实训搭建一个专业的、个性化、专属定制实训平台，延展校外知识技能培训，提高大学生个人综合素质，提升大学生创业就业能力。
                 </p>
             </div>
             <div class="img">
@@ -116,7 +117,7 @@
             <div class="text">
                 <p class="head">大学生创业实践平台</p>
                 <p class="info">
-                    近年来，大学生创业一直是社会热点之一，同时国家出台很多大学生创业相应规划与政策，掀起来一波又一波的创业浪潮。微校充分利用互联网+就业新模式，建立精准创业服务机制，为大学生创业实践提供更高效的扶持，进一步提高大学生创业的成功几率，提升高校创业指导和服务水平
+                    近年来，大学生创业一直是社会热点之一，同时国家出台很多大学生创业相应规划与政策，掀起来一波又一波的创业浪潮。微校充分利用互联网+就业新模式，建立精准创业服务机制，为大学生创业实践提供更高效的扶持，进一步提高大学生创业的成功几率，提升高校创业指导和服务水平。
                 </p>
             </div>
 
@@ -126,7 +127,7 @@
             <br />
             <div class="text">
                 <p class="head">大学生服务平台</p>
-                <p class="info"> 当代大学生的信息获取越来越多来自于互联网，因此利用互联网技术整合资源，为大学生提供全方位服务，倡导快乐而丰富的大学生活</p>
+                <p class="info"> 当代大学生的信息获取越来越多来自于互联网，因此利用互联网技术整合资源，为大学生提供全方位服务，倡导快乐而丰富的大学生活。</p>
             </div>
         </div>
 
@@ -178,79 +179,37 @@
         <div class="caption">
             <span class="title">平台功能</span>
             <span class="subTitle">Platform function</span>
-            <!-- <div class="swiper-wrap">
-                <img src="images/arrow_l.png" class='previous' onclick="prev()">
-                <div class='img1-wrap'>
-                    <img src="images/func-1.png">
-                    <p>实习实训</p>
-                </div>
-                <div class='mid'>
-                    <img src="images/func-2.png">
-                    <p>项目资源库</p>
-                </div>
-                <div class='img3-wrap'>
-                    <img src="images/func-3.png">
-                    <p>创业实践</p>
-                </div>
-                <img src="images/arrow_r.png" class='next' onclick="next()">
-            </div> -->
             <div class="swiper-wrap">
-                <img src="images/arrow_l.png" class='previous' onclick="prev()">
+                <img src="images/arrow_l.png" class='previous' onclick="prev()" style="margin-top:-200px">
                 <div class="img-wrap">
-                    <div class='imgs'>
-                        <img src="images/func-1.png">
-                        <p>实习实训</p>
-                        <!-- <p class="info1">整合各大知名培训实训机构，包含大学各专业的晋升通道及专业资格证书考试培训，拓展技能技术培训等，为大学生提供一个专业提高个人综合素质的平台。</p> -->
+                    <div class="imgs-wrapper">
+                        <div class='imgs'>
+                            <img src="images/func-1.png" class='image'>
+                            <p class='title'>实习实训</p>
+                            <p class="info">整合各大知名培训实训机构，包含大学各专业的晋升通道及专业资格证书考试培训，拓展技能技术培训等，为大学生提供一个专业提高个人综合素质的平台。</p>
+                        </div>
                     </div>
-                    <div class='imgs'>
-                        <img src="images/func-2.png">
-                        <p>项目资源库</p>
-                        <!-- <p class="info2">项目资源库中的企业项目都是经过微校严格审核认证，把控每个环节，为大学生免去后顾之忧，切实可行，利用平台积累创业实践经验。大学生可通过平台自主选择自身感兴趣的行业，详细了解项目实践经验。</p> -->
+                    <div class="imgs-wrapper">
+                        <div class='imgs'>
+                            <img src="images/func-2.png" class='image'>
+                            <p class='title'>项目资源库</p>
+                            <p class="info">
+                                项目资源库中的企业项目都是经过微校严格审核认证，把控每个环节，为大学生免去后顾之忧，切实可行，利用平台积累创业实践经验。大学生可通过平台自主选择自身感兴趣的行业，详细了解项目实践经验。
+                            </p>
+                        </div>
                     </div>
-                    <div class='imgs'>
-                        <img src="images/func-3.png">
-                        <p>创业实践</p>
-                        <!-- <p class=info3>真实创业场景，真实创业项目实操，排除一切虚拟假设。对于高校大学生而言，并不是一场演习，而是一场没有硝烟的战争。同时有专人辅导，实践项目完整孵化过程，使大学生创业路平坦而宽阔。</p> -->
+                    <div class="imgs-wrapper">
+                        <div class='imgs'>
+                            <img src="images/func-3.png" class='image'>
+                            <p class='title'>创业实践</p>
+                            <p class="info">
+                                真实创业场景，真实创业项目实操，排除一切虚拟假设。对于高校大学生而言，并不是一场演习，而是一场没有硝烟的战争。同时有专人辅导，实践项目完整孵化过程，使大学生创业路平坦而宽阔。
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <img src="images/arrow_r.png" class='next' onclick="next()">
+                <img src="images/arrow_r.png" class='next' onclick="next()" style="margin-top:-200px">
             </div>
-            <style>
-                .swiper-wrap {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    font-family: PingFangSC-Medium, sans-serif;
-                    font-size: 22px;
-                    color: #999999;
-                }
-                .img-wrap{
-                    position: relative;
-                    height: 431px;
-                    width: 1160px;
-                    overflow: hidden;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content:center;
-                }
-                .imgs{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-
-                .func-info{
-                    width: 300px;
-                }
-
-            </style>
-            <div class="func-info">
-                <p class="info">整合各大知名培训实训机构，包含大学各专业的晋升通道及专业资格证书考试培训，拓展技能技术培训等，为大学生提供一个专业提高个人综合素质的平台。</p>
-                <p class="info">项目资源库中的企业项目都是经过微校严格审核认证，把控每个环节，为大学生免去后顾之忧，切实可行，利用平台积累创业实践经验。大学生可通过平台自主选择自身感兴趣的行业，详细了解项目实践经验。</p>
-                <p class=info>真实创业场景，真实创业项目实操，排除一切虚拟假设。对于高校大学生而言，并不是一场演习，而是一场没有硝烟的战争。同时有专人辅导，实践项目完整孵化过程，使大学生创业路平坦而宽阔。</p>
-            </div>
-
 
             <!--    轮播, 变化大小, 渐进变化? 轮子?-->
             <!--    1-项目资源库-->

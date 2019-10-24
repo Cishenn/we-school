@@ -88,33 +88,93 @@ function orgPrev() {
     });
 }
 
-//index-swiper
-var items= document.querySelectorAll('.swiper-wrap .img-wrap .imgs');
-items.forEach(function (logo, logoIndex) {
-    logo.style.left = String(logoIndex * (350)) + 'px';
-    logo.style.top = 0;
-    if(logo.offsetLeft===350){
-        logo.style.width=String(500)+'px';
-        logo.style.height=String(375)+'px';
-    }
-});
-function prev(){
-    if(items[items.length-1].offsetLeft===350){
-        return;
-    }
-    items.forEach(function (logo, logoIndex) {
-        logo.style.left = String(logo.offsetLeft -350) + 'px';
-        logo.style.top = 0;
+// view
+var platformFunctions = Array.from(document.querySelectorAll('.swiper-wrap .img-wrap .imgs-wrapper'))
+    .map((item, itemIndex) => {
+        return {
+            node: item,
+            offset: itemIndex
+        };
     });
+function renderPlatformFunctions() {
+    platformFunctions.forEach(platformFunction => {
+        if (platformFunction.offset === -1) {
+            // TODO 
+            platformFunction.node.style.left = -500+'px';
+            platformFunction.node.style.top = 47 + 'px';
+        }
+        else if (platformFunction.offset === 0) {
+            // TODO
+            platformFunction.node.style.left = 0;
+            platformFunction.node.style.top = 37 + 'px';
+            var img=platformFunction.node.querySelector('.imgs .image');
+            img.style.width=400+'px';
+            img.style.height=300+'px';
+            platformFunction.node.style.zIndex = -1;
+            var title=platformFunction.node.querySelector('.imgs .title');
+            title.style.fontSize=22+'px';
+            title.style.color='#999999';
+            var info=platformFunction.node.querySelector('.imgs .info');
+            info.style.display="none";
+        }
+        else if (platformFunction.offset === 1) {
+            // TODO
+            platformFunction.node.style.left = 330 + 'px';
+            platformFunction.node.style.top = 0;
+            platformFunction.node.style.zIndex = 100;
+            var img=platformFunction.node.querySelector('.imgs .image');
+            img.style.width=500+'px';
+            img.style.height=375+'px';
+            var title=platformFunction.node.querySelector('.imgs .title');
+            title.style.fontSize=26+'px';
+            title.style.color='#666666';
+            var info=platformFunction.node.querySelector('.imgs .info');
+            info.style.display="block";
+        }
+        else if (platformFunction.offset === 2) {
+            platformFunction.node.style.left = 810 + 'px';
+            platformFunction.node.style.top = 37 + 'px';
+            platformFunction.node.style.zIndex = -1;
+            var img = platformFunction.node.querySelector(".imgs .image");
+            img.style.width = 400 + 'px';
+            img.style.height = 300 + 'px';
+            var title = platformFunction.node.querySelector('.imgs .title');
+            title.style.fontSize = 22 + 'px';
+            title.style.color = "#999999";
+            var info=platformFunction.node.querySelector('.imgs .info');
+            info.style.display="none";
+        }
+        else {
+            // TODO
+            platformFunction.node.style.left = 1230+'px';
+            platformFunction.node.style.top = 47 + 'px';
+        }
+    })
 }
-function next(){
-    if(items[0].offsetLeft===350){
+renderPlatformFunctions();
+//PlatformFunction
+function prev() {
+    if (platformFunctions[0].offset === -1) {
         return;
     }
-    items.forEach(function (logo, logoIndex) {
-        logo.style.left = String(logo.offsetLeft + 350) + 'px';
-        logo.style.top = 0;
+
+    platformFunctions.forEach(platformFunction => {
+        platformFunction.offset--;
     });
+
+    renderPlatformFunctions();
+}
+//PlatformFunction
+function next() {
+    if (platformFunctions[0].offset === 1) {
+        return;
+    }
+
+    platformFunctions.forEach(platformFunction => {
+        platformFunction.offset++;
+    });
+
+    renderPlatformFunctions();
 }
 
 
