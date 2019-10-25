@@ -353,14 +353,17 @@ img.inline {
     padding-right: 0;
     float: right;
 }
-
-.nav {
-    /*margin: 0 30px;*/
-    /*line-height: 56px;*/
-    /*color: #fff;*/
-    /*font-size: 24px;*/
-    /*border-bottom: 4px solid #f1c40f;*/
+.nav .hr{
+margin-top: 12px;
 }
+
+/* .nav {
+    margin: 0 30px;
+    line-height: 56px;
+    color: #fff;
+    font-size: 24px;
+    border-bottom: 4px solid #f1c40f;
+}  */
 
 .header li {
     width: 114px;
@@ -608,7 +611,20 @@ img.inline {
     background: #1a1a1a;
     display: block
 }
+.first-head{
+    position: relative;
 
+}
+.strongline{
+    height: 6px;
+    width: 56px;
+    background: #16B1B5;
+    border-radius: 3px;
+    /* opacity: 50%; */
+    z-index: -1;
+    position: absolute;
+    bottom: 2px;
+}
 .caption .subTitle {
     color: #999;
     font-size: 16px;
