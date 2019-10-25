@@ -613,7 +613,9 @@ margin-top: 12px;
 }
 .first-head{
     position: relative;
-
+}
+.first-head .title{
+    font-weight: bold;
 }
 .strongline{
     height: 6px;
@@ -842,7 +844,7 @@ margin-top: 12px;
     height: 42px;
     font-size: 30px;
     font-family: PingFangSC-Medium, PingFang SC;
-    font-weight: 500;
+    font-weight: blod;
     color: rgba(51, 51, 51, 1);
     line-height: 42px;
 }
@@ -903,10 +905,10 @@ margin-top: 12px;
     height: 42px;
     font-size: 30px;
     font-family: PingFangSC-Medium, PingFang SC;
-    font-weight: 500;
+    font-weight: blod;
     color: rgba(51, 51, 51, 1);
     line-height: 42px;
-    margin-top: 85px;
+    /* margin-top: 85px; */
 }
 
 .contact_us .subTitle {
@@ -991,7 +993,7 @@ margin-top: 12px;
     height: 42px;
     font-size: 30px;
     font-family: PingFangSC-Medium, PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     color: #333333;
     line-height: 42px;
 }
@@ -1019,7 +1021,7 @@ margin-top: 12px;
     height: 42px;
     font-size: 30px;
     font-family: PingFangSC-Medium, PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     /* font-weight: bold; */
     color: #333333;
     line-height: 42px;
