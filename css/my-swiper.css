@@ -74,6 +74,7 @@
     text-indent:2em ;
     font-size: 16px;
     margin-top: 10px;
+    line-height: 22px;
 }
 @keyframes lleft{
     0%{
@@ -190,20 +191,24 @@
     0%{
         top:37px;
         left: 810px;
+        z-index: -1;
     }
     100%{
         top:37px;
         left:1200px;
+        z-index: -1;
     }
 }
 @keyframes leftl{
     0%{
         top:37px;
         left: 0;
+        z-index: -1;
     }
     100%{
         top:37px;
         left:-400px;
+        z-index: -1;
     }
 }
 

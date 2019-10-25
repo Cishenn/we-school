@@ -166,13 +166,15 @@ function pIndex(){
 }
 function nIndex(){
     platformFunctions.forEach(platformFunction=>{
-        if(platformFunction.offset===1){
+        if(platformFunction.offset===0){
             platformFunction.node.style.zIndex=1;
         }
-        if(platformFunction.offset-1===2){
-            platformFunction.node.style.zIndex=-2;
+        if(platformFunction.offset===1){
+            platformFunction.node.style.zIndex=2;
         }
-        platformFunction.node.style.zIndex=-1;
+        
+        platformFunction.node.style.zIndex=-3;
+        
     })
 }
 //PlatformFunction
@@ -187,7 +189,7 @@ function prev() {
         if(platformFunction.offset+1===0){
             platformFunction.node.style.animation = "leftl 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
-            img.style.animation="leftl 0.5s ease .1s";
+            img.style.animation="midtoleftimg 0.5s ease .1s";
             pIndex();
         }
         if(platformFunction.offset===0){
@@ -230,7 +232,7 @@ function next() {
             nIndex();
         }
         if(platformFunction.offset===2){
-            platformFunction.node.style.animation = "midtoright 0.5s ease .1s";
+            platformFunction.node.style.animation = "midtoright 0.45s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
             img.style.animation="midtorightimg 0.5s ease .1s";
             nIndex();
@@ -238,7 +240,7 @@ function next() {
         if(platformFunction.offset-1===2){
             platformFunction.node.style.animation = "rightr 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
-            img.style.animation="rightr 0.5s ease .1s";
+            img.style.animation="rightr 0.4s ease .1s";
             nIndex();
         }
     });
