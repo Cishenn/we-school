@@ -184,6 +184,12 @@ function prev() {
     platformFunctions.forEach(platformFunction => {
         platformFunction.offset--;
         var img;
+        if(platformFunction.offset+1===0){
+            platformFunction.node.style.animation = "leftl 0.5s ease .1s";
+            img = platformFunction.node.querySelector(".imgs .image");
+            img.style.animation="leftl 0.5s ease .1s";
+            pIndex();
+        }
         if(platformFunction.offset===0){
             platformFunction.node.style.animation = "midtoleft 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
