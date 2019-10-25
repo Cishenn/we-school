@@ -137,7 +137,7 @@ function renderPlatformFunctions() {
         else if (platformFunction.offset === 2) {
             platformFunction.node.style.left = 810 + 'px';
             platformFunction.node.style.top = 37 + 'px';
-            platformFunction.node.style.zIndex = -1;
+            platformFunction.node.style.zIndex = -2;
             var img = platformFunction.node.querySelector(".imgs .image");
             img.style.width = 400 + 'px';
             img.style.height = 300 + 'px';
@@ -156,6 +156,25 @@ function renderPlatformFunctions() {
     })
 }
 renderPlatformFunctions();
+function pIndex(){
+        platformFunctions.forEach(platformFunction=>{
+            if(platformFunction.offset===1){
+                platformFunction.node.style.zIndex=1;
+            }
+            platformFunction.node.style.zIndex=-1;    
+        })
+}
+function nIndex(){
+    platformFunctions.forEach(platformFunction=>{
+        if(platformFunction.offset===1){
+            platformFunction.node.style.zIndex=1;
+        }
+        if(platformFunction.offset-1===2){
+            platformFunction.node.style.zIndex=-2;
+        }
+        platformFunction.node.style.zIndex=-1;
+    })
+}
 //PlatformFunction
 function prev() {
     if (platformFunctions[0].offset === -1) {
@@ -169,14 +188,17 @@ function prev() {
             platformFunction.node.style.animation = "midtoleft 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
             img.style.animation="midtoleftimg 0.5s ease .1s";
+            pIndex();
         }
         if(platformFunction.offset===1){
             platformFunction.node.style.animation = "righttomid 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
             img.style.animation="righttomidimg 0.5s ease .1s";
+            pIndex();
         }
         if(platformFunction.offset===2){
             platformFunction.node.style.animation = "rright 0.5s ease .1s";
+            pIndex();
         }
     });
 
@@ -193,16 +215,25 @@ function next() {
         platformFunction.offset++;
         if(platformFunction.offset===0){
             platformFunction.node.style.animation="lleft 0.5s ease .1s";
+            nIndex();
         }
         if(platformFunction.offset===1){
             platformFunction.node.style.animation = "lefttomid 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
             img.style.animation="lefttomidimg 0.5s ease .1s";
+            nIndex();
         }
         if(platformFunction.offset===2){
             platformFunction.node.style.animation = "midtoright 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
             img.style.animation="midtorightimg 0.5s ease .1s";
+            nIndex();
+        }
+        if(platformFunction.offset-1===2){
+            platformFunction.node.style.animation = "rightr 0.5s ease .1s";
+            img = platformFunction.node.querySelector(".imgs .image");
+            img.style.animation="rightr 0.5s ease .1s";
+            nIndex();
         }
     });
 

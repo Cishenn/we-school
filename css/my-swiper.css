@@ -100,10 +100,7 @@
     0%{
         width: 400px;
         height: 300px;
-        z-index: -1;
-    }
-    50%{
-        z-index: 0;
+        z-index: 1;
     }
     100%{
         width: 500px;
@@ -128,9 +125,9 @@
         height: 375px;
         z-index: 1;
     }
-    50%{
+    /* 50%{
         z-index: 0;
-    }
+    } */
     100%{
         width: 400px;
         height: 300px;
@@ -154,9 +151,9 @@
         height: 300px;
         z-index: -1;
     }
-    50%{
+    /* 50%{
         z-index: 0;
-    }
+    } */
     100%{
         width: 500px;
         height: 375px;
@@ -179,9 +176,9 @@
         height: 375px;
         z-index: 1;
     }
-    50%{
+    /* 50%{
         z-index: 0;
-    }
+    } */
     100%{
         width: 400px;
         height: 300px;
@@ -192,16 +189,23 @@
     0%{
         top:37px;
         left: 1200px;
-        width: 400px;
-        height: 300px;
     }
     100%{
         top:37px;
-        left:810;
-        width: 400px;
-        height: 300px;
+        left:1600px;
     }
 }
+@keyframes rightr{
+    0%{
+        top:37px;
+        left: 1200px;
+    }
+    100%{
+        top:37px;
+        left:1250px;
+    }
+}
+
 
 
 
