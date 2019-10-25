@@ -127,7 +127,7 @@ function renderPlatformFunctions() {
             var img = platformFunction.node.querySelector('.imgs .image');
             img.style.width = 500 + 'px';
             img.style.height = 375 + 'px';
-            img.style.boxShow="1px 1px 5px #aaa";
+            img.style.boxShadow="1px 3px 5px #aaa";
             var title = platformFunction.node.querySelector('.imgs .title');
             title.style.fontSize = 26 + 'px';
             title.style.color = '#666666';
@@ -164,23 +164,31 @@ function prev() {
 
     platformFunctions.forEach(platformFunction => {
         platformFunction.offset--;
+        var img;
         if(platformFunction.offset===0){
             platformFunction.node.style.animation = "midtoleft 0.5s ease .1s";
+            img = platformFunction.node.querySelector(".imgs .image");
+            img.style.animation="midtoleftimg 0.5s ease .1s";
         }
         if(platformFunction.offset===1){
-            platformFunction.node.style.animation = "righttomid 0.4s ease .1s";
+            platformFunction.node.style.animation = "righttomid 0.5s ease .1s";
+            img = platformFunction.node.querySelector(".imgs .image");
+            img.style.animation="righttomidimg 0.5s ease .1s";
         }
         if(platformFunction.offset===2){
             platformFunction.node.style.animation = "rright 0.5s ease .1s";
         }
     });
 
-    renderPlatformFunctions();
+    setTimeout(function() {
+        renderPlatformFunctions();
+    }, 500);
 }
 function next() {
     if (platformFunctions[0].offset === 1) {
         return;
     }
+    var img;
     platformFunctions.forEach(platformFunction => {
         platformFunction.offset++;
         if(platformFunction.offset===0){
@@ -188,13 +196,19 @@ function next() {
         }
         if(platformFunction.offset===1){
             platformFunction.node.style.animation = "lefttomid 0.5s ease .1s";
+            img = platformFunction.node.querySelector(".imgs .image");
+            img.style.animation="lefttomidimg 0.5s ease .1s";
         }
         if(platformFunction.offset===2){
             platformFunction.node.style.animation = "midtoright 0.5s ease .1s";
+            img = platformFunction.node.querySelector(".imgs .image");
+            img.style.animation="midtorightimg 0.5s ease .1s";
         }
     });
 
-    renderPlatformFunctions();
+    setTimeout(function() {
+        renderPlatformFunctions();
+    }, 500);
 }
 
 
