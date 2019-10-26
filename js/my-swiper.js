@@ -12,10 +12,9 @@ var maxPageCount = Math.ceil(logoCount / pageSize);
 var currentLogoPage = 0;
 
 function schoolNext() {
-    if (currentLogoPage >= maxPageCount - 1) {
+    if (currentLogoPage >=maxPageCount - 1) {
         return;
     }
-
     logos.forEach(function (logo, logoIndex) {
         var currentLeft = Number(logo.style.left.replace('px', ''));
         logo.style.left = String(currentLeft - 1120 - 78) + 'px';
@@ -112,12 +111,11 @@ function renderPlatformFunctions() {
             img.style.width = 400 + 'px';
             img.style.height = 300 + 'px';
             platformFunction.node.style.zIndex = -1;
-            var title = platformFunction.node.querySelector('.imgs .title');
+            var title = platformFunction.node.querySelector('.imgs .stitle');
             title.style.fontSize = 22 + 'px';
             title.style.color = '#999999';
             var info = platformFunction.node.querySelector('.imgs .info');
             info.style.display = "none";
-            platformFunction.node.style.transition = "all 1";
         }
         else if (platformFunction.offset === 1) {
             // TODO
@@ -127,10 +125,10 @@ function renderPlatformFunctions() {
             var img = platformFunction.node.querySelector('.imgs .image');
             img.style.width = 500 + 'px';
             img.style.height = 375 + 'px';
-            img.style.boxShadow="1px 3px 5px #aaa";
-            var title = platformFunction.node.querySelector('.imgs .title');
+            img.style.boxShadow = "1px 3px 5px #aaa";
+            var title = platformFunction.node.querySelector('.imgs .stitle');
             title.style.fontSize = 26 + 'px';
-            title.style.color = '#666666';
+            title.style.color = '#333333';
             var info = platformFunction.node.querySelector('.imgs .info');
             info.style.display = "block";
         }
@@ -141,12 +139,11 @@ function renderPlatformFunctions() {
             var img = platformFunction.node.querySelector(".imgs .image");
             img.style.width = 400 + 'px';
             img.style.height = 300 + 'px';
-            var title = platformFunction.node.querySelector('.imgs .title');
+            var title = platformFunction.node.querySelector('.imgs .stitle');
             title.style.fontSize = 22 + 'px';
             title.style.color = "#999999";
             var info = platformFunction.node.querySelector('.imgs .info');
             info.style.display = "none";
-            platformFunction.node.style.transition = "with 2s";
         }
         else {
             // TODO
@@ -156,25 +153,25 @@ function renderPlatformFunctions() {
     })
 }
 renderPlatformFunctions();
-function pIndex(){
-        platformFunctions.forEach(platformFunction=>{
-            if(platformFunction.offset===1){
-                platformFunction.node.style.zIndex=1;
-            }
-            platformFunction.node.style.zIndex=-1;    
-        })
+function pIndex() {
+    platformFunctions.forEach(platformFunction => {
+        if (platformFunction.offset === 1) {
+            platformFunction.node.style.zIndex = 1;
+        }
+        platformFunction.node.style.zIndex = -1;
+    })
 }
-function nIndex(){
-    platformFunctions.forEach(platformFunction=>{
-        if(platformFunction.offset===0){
-            platformFunction.node.style.zIndex=1;
+function nIndex() {
+    platformFunctions.forEach(platformFunction => {
+        if (platformFunction.offset === 0) {
+            platformFunction.node.style.zIndex = 1;
         }
-        if(platformFunction.offset===1){
-            platformFunction.node.style.zIndex=2;
+        if (platformFunction.offset === 1) {
+            platformFunction.node.style.zIndex = 2;
         }
-        
-        platformFunction.node.style.zIndex=-3;
-        
+
+        platformFunction.node.style.zIndex = -3;
+
     })
 }
 //PlatformFunction
@@ -186,66 +183,68 @@ function prev() {
     platformFunctions.forEach(platformFunction => {
         platformFunction.offset--;
         var img;
-        if(platformFunction.offset+1===0){
+        if (platformFunction.offset + 1 === 0) {
+            platformFunction.offset=2;
             platformFunction.node.style.animation = "leftl 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
-            img.style.animation="midtoleftimg 0.5s ease .1s";
+            img.style.animation = "midtoleftimg 0.5s ease .1s";
             pIndex();
         }
-        if(platformFunction.offset===0){
+        if (platformFunction.offset === 0) {
             platformFunction.node.style.animation = "midtoleft 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
-            img.style.animation="midtoleftimg 0.5s ease .1s";
+            img.style.animation = "midtoleftimg 0.5s ease .1s";
             pIndex();
         }
-        if(platformFunction.offset===1){
+        if (platformFunction.offset === 1) {
             platformFunction.node.style.animation = "righttomid 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
-            img.style.animation="righttomidimg 0.5s ease .1s";
+            img.style.animation = "righttomidimg 0.5s ease .1s";
             pIndex();
         }
-        if(platformFunction.offset===2){
+        if (platformFunction.offset === 2) {
             platformFunction.node.style.animation = "rright 0.5s ease .1s";
             pIndex();
         }
     });
 
-    setTimeout(function() {
+    setTimeout(function () {
         renderPlatformFunctions();
     }, 500);
 }
 function next() {
-    if (platformFunctions[0].offset === 1) {
-        return;
-    }
+    // if (platformFunctions[0].offset === 1) {
+    //     return;
+    // }
     var img;
     platformFunctions.forEach(platformFunction => {
         platformFunction.offset++;
-        if(platformFunction.offset===0){
-            platformFunction.node.style.animation="lleft 0.5s ease .1s";
+        if (platformFunction.offset === 0) {
+            platformFunction.node.style.animation = "lleft 0.5s ease .1s";
             nIndex();
         }
-        if(platformFunction.offset===1){
+        if (platformFunction.offset === 1) {
             platformFunction.node.style.animation = "lefttomid 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
-            img.style.animation="lefttomidimg 0.5s ease .1s";
+            img.style.animation = "lefttomidimg 0.5s ease .1s";
             nIndex();
         }
-        if(platformFunction.offset===2){
+        if (platformFunction.offset === 2) {
             platformFunction.node.style.animation = "midtoright 0.45s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
-            img.style.animation="midtorightimg 0.5s ease .1s";
+            img.style.animation = "midtorightimg 0.5s ease .1s";
             nIndex();
         }
-        if(platformFunction.offset-1===2){
+        if (platformFunction.offset - 1 === 2) {
+            platformFunction.offset=0;
             platformFunction.node.style.animation = "rightr 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
-            img.style.animation="rightr 0.4s ease .1s";
+            img.style.animation = "rightr 0.4s ease .1s";
             nIndex();
         }
     });
 
-    setTimeout(function() {
+    setTimeout(function () {
         renderPlatformFunctions();
     }, 500);
 }

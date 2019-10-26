@@ -8,7 +8,7 @@
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 25px;
+    margin: 0 auto;
 }
 .index-banner {
     height: 600px;

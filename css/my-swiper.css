@@ -75,11 +75,12 @@
     font-size: 16px;
     margin-top: 10px;
     line-height: 22px;
+    line-height: 26px;
 }
-@keyframes lleft{
+@keyframes righttoleft{
     0%{
         top:37px;
-        left:-400px;
+        left:810px;
     }
     100%{
         top:37px;
@@ -202,13 +203,15 @@
 @keyframes leftl{
     0%{
         top:37px;
-        left: 0;
-        z-index: -1;
+        left: 810px;
+    }
+    50%{
+        top:37px;
+        left: -200px;
     }
     100%{
         top:37px;
-        left:-400px;
-        z-index: -1;
+        left:0px;
     }
 }
 

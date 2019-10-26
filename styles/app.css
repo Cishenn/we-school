@@ -625,7 +625,7 @@ margin-top: 12px;
     /* opacity: 50%; */
     z-index: -1;
     position: absolute;
-    bottom: 2px;
+    bottom: 4px;
 }
 .caption .subTitle {
     color: #999;
@@ -693,22 +693,6 @@ margin-top: 12px;
     margin-top: 20px;
 }
 
-.ad-writer {
-    position: relative;
-    width: 400px;
-    height: 106px;
-    right: 80.47%;
-    top: 20.78%;
-    font-size: 38px;
-    text-align: left;
-    letter-spacing: 2px;
-    font-family: PingFangSC-Regular, PingFang SC;
-}
-
-.ad-writer .two {
-    text-indent: 2em;
-}
-
 .previous {
     margin-right: 3.96%;
 }
@@ -751,9 +735,9 @@ margin-top: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
-    line-height: 22px;
+    line-height: 26px;
     text-indent: 2em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .advantage .list .title,
@@ -1056,8 +1040,9 @@ margin-top: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: rgba(102, 102, 102, 1);
-    line-height: 22px;
+    line-height: 26px;
     text-indent: 2em;
+    letter-spacing: 2px;
 }
 
 .first,
@@ -2337,6 +2322,9 @@ hr {
 
 .layui-timeline-content {
     padding-left: 25px
+}
+.imgs .stitle{
+    font-weight: 500;
 }
 
 .layui-text {
