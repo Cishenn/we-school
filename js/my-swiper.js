@@ -251,8 +251,8 @@ function next() {
     platformFunctions.forEach(platformFunction => {
         platformFunction.offset++;
         if (platformFunction.offset === 0) {
-            platformFunction.node.style.animation = "righttoleft 0.5s ease .1s";
-            nIndex();
+            platformFunction.node.style.animation = "righttoleft 0.1s ease .1s";
+            pIndex();
         }
         if (platformFunction.offset === 1) {
             platformFunction.node.style.animation = "lefttomid 0.5s ease .1s";
