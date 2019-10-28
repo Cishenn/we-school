@@ -214,6 +214,16 @@
         left:0px;
     }
 }
+@keyframes righttoleft{
+    0%{
+        top: 37px;
+        left: 810;
+    }
+    100%{
+        top: 37px;
+        left: 0;
+    }
+}
 
 
 

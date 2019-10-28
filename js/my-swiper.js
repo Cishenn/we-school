@@ -12,28 +12,42 @@ var maxPageCount = Math.ceil(logoCount / pageSize);
 var currentLogoPage = 0;
 
 function schoolNext() {
-    if (currentLogoPage >=maxPageCount - 1) {
-        return;
+    if (currentLogoPage >= maxPageCount - 1) {
+        logos.forEach(function (logo, logoIndex) {
+            var currentLeft = Number(logo.style.left.replace('px', ''));
+            logo.style.left = String(currentLeft + 1120 + 77) + 'px';
+            logo.style.top = 0;
+        });
+        currentLogoPage = 0;
     }
-    logos.forEach(function (logo, logoIndex) {
-        var currentLeft = Number(logo.style.left.replace('px', ''));
-        logo.style.left = String(currentLeft - 1120 - 78) + 'px';
-        logo.style.top = 0;
-    });
-    currentLogoPage++;
+    else {
+        logos.forEach(function (logo, logoIndex) {
+            var currentLeft = Number(logo.style.left.replace('px', ''));
+            logo.style.left = String(currentLeft - 1120 - 78) + 'px';
+            logo.style.top = 0;
+        });
+        currentLogoPage++;
+    }
 }
 
 function schoolPrev() {
     if (currentLogoPage === 0) {
-        return;
+        logos.forEach(function (logo, logoIndex) {
+            var currentLeft = Number(logo.style.left.replace('px', ''));
+            logo.style.left = String(currentLeft - 1120 - 78) + 'px';
+            logo.style.top = 0;
+        });
+        currentLogoPage++;
     }
+    else{
+        logos.forEach(function (logo, logoIndex) {
+            var currentLeft = Number(logo.style.left.replace('px', ''));
+            logo.style.left = String(currentLeft + 1120 + 77) + 'px';
+            logo.style.top = 0;
+        });
+        currentLogoPage--;
 
-    logos.forEach(function (logo, logoIndex) {
-        var currentLeft = Number(logo.style.left.replace('px', ''));
-        logo.style.left = String(currentLeft + 1120 + 77) + 'px';
-        logo.style.top = 0;
-    });
-    currentLogoPage--;
+    }
 }
 
 //企业logo
@@ -44,21 +58,30 @@ companyLogos.forEach(function (logo, logoIndex) {
 });
 function companyNext() {
     if (companyLogos[companyLogos.length - 1].offsetLeft < 1127) {
-        return;
+        companyLogos.forEach(function (logo, logoIndex) {
+            logo.style.left = String(logo.offsetLeft + (1127 + 109) * 2) + 'px';
+            logo.style.top = 0;
+        });
+
     }
     companyLogos.forEach(function (logo, logoIndex) {
-        logo.style.left = String(logo.offsetLeft - 1127 - 109) + 'px';
+        logo.style.left = String(logo.offsetLeft - (1127 + 109)) + 'px';
         logo.style.top = 0;
     });
 }
 function companyPrev() {
-    if (companyLogos[0].offsetLeft == 0) {
-        return;
+    if (companyLogos[companyLogos.length - 1].offsetLeft > 1127) {
+        companyLogos.forEach(function (logo, logoIndex) {
+            logo.style.left = String(logo.offsetLeft - 1235) + 'px';
+            logo.style.top = 0;
+        });
     }
-    companyLogos.forEach(function (logo, logoIndex) {
-        logo.style.left = String(logo.offsetLeft + 1127 + 109) + 'px';
-        logo.style.top = 0;
-    });
+    else {
+        companyLogos.forEach(function (logo, logoIndex) {
+            logo.style.left = String(logo.offsetLeft + 1127 + 109) + 'px';
+            logo.style.top = 0;
+        });
+    }
 }
 
 //投资logo
@@ -68,23 +91,31 @@ orgLogos.forEach(function (logo, logoIndex) {
     logo.style.top = 0;
 });
 function orgNext() {
-    orgLogos.forEach(function (logo, logoIndex) {
-        if (orgLogos[orgLogos.length - 1].offsetLeft < 1127) {
-            return;
-        } else {
-            logo.style.left = String(logo.offsetLeft - 1127 - 109) + 'px';
+    if (orgLogos[orgLogos.length - 1].offsetLeft < 1127) {
+        orgLogos.forEach(function (logo, logoIndex) {
+            logo.style.left = String(logo.offsetLeft + (1127 + 109) * 2) + 'px';
             logo.style.top = 0;
-        }
+        });
+
+    }
+    orgLogos.forEach(function (logo, logoIndex) {
+        logo.style.left = String(logo.offsetLeft - (1127 + 109)) + 'px';
+        logo.style.top = 0;
     });
 }
 function orgPrev() {
-    if (orgLogos[0].offsetLeft == 0) {
-        return;
+    if (orgLogos[orgLogos.length - 1].offsetLeft > 1127) {
+        orgLogos.forEach(function (logo, logoIndex) {
+            logo.style.left = String(logo.offsetLeft - 1235) + 'px';
+            logo.style.top = 0;
+        });
     }
-    orgLogos.forEach(function (logo, logoIndex) {
-        logo.style.left = String(logo.offsetLeft + 1127 + 109) + 'px';
-        logo.style.top = 0;
-    });
+    else {
+        orgLogos.forEach(function (logo, logoIndex) {
+            logo.style.left = String(logo.offsetLeft + 1127 + 109) + 'px';
+            logo.style.top = 0;
+        });
+    }
 }
 
 // view
@@ -184,7 +215,7 @@ function prev() {
         platformFunction.offset--;
         var img;
         if (platformFunction.offset + 1 === 0) {
-            platformFunction.offset=2;
+            platformFunction.offset = 2;
             platformFunction.node.style.animation = "leftl 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
             img.style.animation = "midtoleftimg 0.5s ease .1s";
@@ -220,7 +251,7 @@ function next() {
     platformFunctions.forEach(platformFunction => {
         platformFunction.offset++;
         if (platformFunction.offset === 0) {
-            platformFunction.node.style.animation = "lleft 0.5s ease .1s";
+            platformFunction.node.style.animation = "righttoleft 0.5s ease .1s";
             nIndex();
         }
         if (platformFunction.offset === 1) {
@@ -236,7 +267,7 @@ function next() {
             nIndex();
         }
         if (platformFunction.offset - 1 === 2) {
-            platformFunction.offset=0;
+            platformFunction.offset = 0;
             platformFunction.node.style.animation = "rightr 0.5s ease .1s";
             img = platformFunction.node.querySelector(".imgs .image");
             img.style.animation = "rightr 0.4s ease .1s";
