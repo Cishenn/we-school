@@ -920,7 +920,7 @@ margin-top: 12px;
 }
 
 .contact_us .cover .head {
-    width: 205px;
+    /* width: 205px; */
     height: 33px;
     font-size: 24px;
     font-family: PingFangSC-Medium, PingFang SC;
@@ -933,8 +933,11 @@ margin-top: 12px;
 }
 
 .contact_us .cover .info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     width: 490px;
-    height: 25px;
+    /* height: 25px; */
     font-size: 18px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
